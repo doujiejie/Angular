@@ -30,7 +30,7 @@ angular
       })
       .state('greenBrick', {
         url: '/bricks/green',
-        templateUrl: ' /bricks.html',
+        templateUrl: ' views/bricks.html',
         controller: 'GreenBricksCtrl as brick'
       })
       .state('cart', {
@@ -39,18 +39,18 @@ angular
         controller: 'CartCtrl as cart'
       })
       .state('redBrick.cart', {
-        url: '/cart',
+        url: '/bricks/red/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
       })
       .state('blueBrick.cart', {
-        url: '/cart',
+        url: '/bricks/blue/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
       })
       .state('greenBrick.cart', {
-        url: '/cart',
+        url: '/bricks/green/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
-      });
+      })
   }])
